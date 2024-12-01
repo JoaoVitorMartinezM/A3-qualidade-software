@@ -11,18 +11,24 @@ import java.util.List;
 @Component
 public class Assento {
 
-    private List<AssentoDto> listaAssentos = new ArrayList<>();
 
-    public Assento() {
-        criarAssentos();
-    }
+//    public Assento() {
+//        criarAssentos();
+//    }
 
-    private void criarAssentos() {
+    public List<AssentoDto> getListaAssentos() {
+        List<AssentoDto> listaAssentos = new ArrayList<>();
         for (int fileira = 1; fileira <= 9; fileira++) {
             for (char poltrona = 'A'; poltrona <= 'F'; poltrona++) {
                 String assento = fileira + String.valueOf(poltrona);
                 listaAssentos.add(new AssentoDto(assento, false));
             }
         }
+        return listaAssentos;
     }
+
+
+//    public static List<AssentoDto> getListaAssentos() {
+//        return criarAssentos();
+//    }
 }

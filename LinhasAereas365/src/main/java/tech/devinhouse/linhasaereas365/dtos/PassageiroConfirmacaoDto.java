@@ -7,7 +7,7 @@ import tech.devinhouse.linhasaereas365.models.Passageiro;
 
 import java.time.LocalDate;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

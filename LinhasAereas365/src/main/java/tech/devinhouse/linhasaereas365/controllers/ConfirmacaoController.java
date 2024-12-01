@@ -1,5 +1,6 @@
 package tech.devinhouse.linhasaereas365.controllers;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
@@ -8,8 +9,6 @@ import tech.devinhouse.linhasaereas365.dtos.ConfirmacaoRequest;
 import tech.devinhouse.linhasaereas365.dtos.ConfirmacaoResponse;
 import tech.devinhouse.linhasaereas365.models.Confirmacao;
 import tech.devinhouse.linhasaereas365.services.ConfirmacaoService;
-
-import javax.validation.Valid;
 import java.net.URI;
 
 @RestController

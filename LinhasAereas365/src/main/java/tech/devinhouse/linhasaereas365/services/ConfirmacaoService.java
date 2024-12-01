@@ -2,6 +2,7 @@ package tech.devinhouse.linhasaereas365.services;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tech.devinhouse.linhasaereas365.exceptions.CpfInvalidoException;
 import tech.devinhouse.linhasaereas365.models.Classificacao;
@@ -22,12 +23,14 @@ public class ConfirmacaoService {
 
     private final PassageiroRepository passageiroRepository;
     private final ConfirmacaoRepository confirmacaoRepository;
-    private final AssentoService assentoService;
+    @Autowired
+    private AssentoService assentoService;
     private final ValidaCPF validaCPF;
 
     public Confirmacao checkin(Long cpf, Confirmacao confirmacao) {
 
         String assentos = confirmacao.getAssento();
+
 
         if (!validaCPF.isValidCPF(String.valueOf(cpf)))
             throw new CpfInvalidoException("CPF inválido!");

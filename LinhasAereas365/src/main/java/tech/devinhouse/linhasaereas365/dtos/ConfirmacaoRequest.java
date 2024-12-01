@@ -1,12 +1,13 @@
 package tech.devinhouse.linhasaereas365.dtos;
 
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+
 
 @Data
 @AllArgsConstructor

@@ -13,10 +13,10 @@ import java.util.List;
 public class AssentoService {
 
     private final ConfirmacaoRepository repository;
-    private final Assento listaDeAssentos;
+    private final Assento assentoModel;
 
     public List<AssentoDto> consultarAssentos() {
-        return listaDeAssentos.getListaAssentos();
+        return assentoModel.getListaAssentos();
     }
 
     public AssentoDto consultarAssento(String assento) {

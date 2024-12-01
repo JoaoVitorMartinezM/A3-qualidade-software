@@ -4,7 +4,7 @@ import tech.devinhouse.linhasaereas365.models.Classificacao;
 
 import java.time.LocalDate;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 
 import lombok.Data;
 

@@ -14,8 +14,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import javax.validation.ConstraintViolationException;
-import javax.validation.Path;
+import jakarta.validation.ConstraintViolationException;
+import jakarta.validation.Path;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -63,7 +63,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(statusCode).body(erroResponse);
     }
 
-    @Override
     public ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers,
             HttpStatus status, WebRequest request) {
         Map<String, String> camposComErros = new HashMap<>();

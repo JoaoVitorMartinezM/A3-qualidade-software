@@ -1,8 +1,10 @@
 package tech.devinhouse.linhasaereas365.dtos;
 
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.*;
 
 @Data
 public class PassageiroPendenteDto {
