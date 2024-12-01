@@ -8,6 +8,21 @@ Desenvolvido por:
 ## Testes
 Os testes foram feitos nas principais rotas do sistema e estão disponíveis em "LinhasAereas365/src/test/java/tech/devinhouse/linhasaereas365/services", em cada teste unitário existe uma breve descrição do que esta sendo testado.
 
+# CI
+ Utiliza 3 ambientes: 
+- dev Desenvolvimento
+- hmg Homologação
+- prd Produção
+
+Pipeline 
+- dev - Compilação
+- hmg - Compilação, Testes, AnáliseCódigo, CoberturaCódigo
+- prd - Empacotamento
+ <br>
+ - Utilizao Apache Maven para a automatizaçãoda construção.<br>
+ - A pasta test contêmostestes unitáriosdo projetoutilizandoJUnit 4.<br>
+ - A coberturado códigoé realizada através do JaCoCo.<br>
+
 ## Contexto
 A empresa 365 Linhas Aéreas entrou em operação com uma aeronave
 para atender a um grupo seleto de clientes que fazem o trecho Florianópolis -
