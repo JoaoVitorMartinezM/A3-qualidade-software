@@ -44,7 +44,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: cd LinhasAereas365 && mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=JoaoVitorMartinezM_A3-qualidade-software
+        run: cd LinhasAereas365 && mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=JoaoVitorMartinezM_A3-qualidade-software org.jacoco:jacoco-maven-plugin:prepare-agent-Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml 
 
  build-hmg:
    runs-on: ubuntu-latest
