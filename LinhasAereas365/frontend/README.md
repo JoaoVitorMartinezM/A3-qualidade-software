@@ -71,3 +71,5 @@ Caso a solicitação não infrinja nenhuma regra de negócio, um cartão de conf
 é gerado.
 
 HTTP GET → http://localhost:5173/checkin
+
+bla
